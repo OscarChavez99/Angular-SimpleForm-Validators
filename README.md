@@ -2,11 +2,10 @@
 
 This project demonstrates how to create a form with custom validators.
 The image shows that clicking on an input and then clicking outside of it will display an error message.
-
-![image](https://github.com/user-attachments/assets/813aa95d-e256-43c6-90df-b63a43ea7029)
+![image](https://github.com/user-attachments/assets/40f5e87e-db99-4b7b-be97-f2ca10b8246b)
 
 Additionally, if you click on submit without the form information being correct, it will display all error messages for the inputs.
-![image](https://github.com/user-attachments/assets/6260ddcd-ddbf-43e8-97e7-88657f491cc0)
+![image](https://github.com/user-attachments/assets/1af8eedf-f12a-4417-a4bf-4fae25cc3837)
 
 This is achieved in the **app.module.ts** file
 ![image](https://github.com/user-attachments/assets/08999b59-7078-4247-bcaa-78bd7e94858b)
