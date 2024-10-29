@@ -1,0 +1,19 @@
+<mat-card class="title-card">
+    <mat-card-title>{{title}}</mat-card-title>
+</mat-card>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+  <mat-form-field class="full-width">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" placeholder="Name">
+    <mat-error *ngIf="form.get('name')?.hasError('required')">Required</mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <mat-label>Age</mat-label>
+    <input matInput formControlName="age" type="number" placeholder="Age">
+    <mat-error *ngIf="form.get('age')?.hasError('ageRangeError')">The age must be between 1 and 100</mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" class="button">Submit</button>
+</form>
